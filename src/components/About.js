@@ -80,7 +80,7 @@ const AboutUs = () => {
               <div className="grid grid-cols-3 gap-4 text-center mt-8">
                 <StatCard number="500+" label="Companies Served" />
                 <StatCard number="90%" label="Placement Success Rate" />
-                <StatCard number="15" label="Industry Specializations" />
+                <StatCard number="15" label="Industry Specialists" />
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@ const ValueItem = ({ icon: Icon, title, description }) => (
 // Component for Stats
 const StatCard = ({ number, label }) => (
   <div className="bg-gradient-to-br from-sky-50 to-white p-6 rounded-xl shadow-sm border border-sky-100">
-    <div className="text-4xl font-bold text-sky-700 mb-2">{number}</div>
+    <div className="lg:text-4xl text-3xl font-bold text-sky-700 mb-2">{number}</div>
     <div className="text-sm text-gray-500">{label}</div>
   </div>
 );
