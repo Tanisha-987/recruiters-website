@@ -134,7 +134,7 @@ const ValueItem = ({ icon: Icon, title, description }) => (
 // Component for Stats
 const StatCard = ({ number, label }) => (
   <div className="bg-gradient-to-br from-sky-50 to-white p-6 rounded-xl shadow-sm border border-sky-100">
-    <div className="lg:text-4xl text-3xl font-bold text-sky-700 mb-2">{number}</div>
+    <div className="lg:text-4xl text-2xl font-bold text-sky-700 mb-2">{number}</div>
     <div className="text-sm text-gray-500">{label}</div>
   </div>
 );
