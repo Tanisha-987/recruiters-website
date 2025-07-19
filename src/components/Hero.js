@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle, Target, User, Briefcase, Mail, Phone, FileText } from 'lucide-react';
-
+import jobsImage from "../assets/jobImage.jpg"
 const Hero = () => {
   return (
     <section id='home' className="relative bg-gradient-to-br from-sky-50 via-white to-sky-200 pt-16 pb-24">
@@ -75,6 +75,14 @@ const VisualElement = () => (
   <div className="relative">
     <div className="bg-gradient-to-br from-sky-50 to-sky-200 rounded-2xl p-8 shadow-2xl">
       <div className="grid grid-cols-2 gap-6">
+        {/* New Image Section */}
+        <div className="col-span-2 mb-6">
+          <img 
+            src={jobsImage} // Replace with your image path
+            alt="Descriptive Alt Text" // Provide a descriptive alt text
+            className="w-full h-auto rounded-lg" // Adjust styles as needed
+          />
+        </div>
         <FeatureCard 
           icon={Target} 
           title="Targeted Search" 
@@ -90,6 +98,7 @@ const VisualElement = () => (
     </div>
   </div>
 );
+
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="bg-white rounded-xl p-6 shadow-lg">
