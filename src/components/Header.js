@@ -19,7 +19,7 @@ const Header = () => {
     ],
     contact: [
       { icon: Phone, text: "+91 80768-21601", link: "tel:+918076821601" },
-      { icon: Mail, text: "contact@strive.com", link: "mailto:contact@strive.com" },
+      { icon: Mail, text: "hr@strivebusinesssolution.com", link: "https://mail.google.com/mail/?view=cm&fs=1&to=hr@strivebusinesssolution.com" },
     ],
   };
 

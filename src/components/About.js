@@ -115,11 +115,11 @@ const OurStorySection = () => (
       </div>
       <div>
         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-          Founded in 2015, Strive Business Solutions began as a small team of recruitment specialists with a shared vision: to transform how companies find talent and how professionals find opportunities.
+          Founded in 2024, Strive Business Solutions began as a small team of recruitment specialists with a shared vision: to transform how companies find talent and how professionals find opportunities.
         </p>
         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-          Today, we've grown into a full-service recruitment partner serving 500+ companies across multiple industries.
-          Our team of 50+ specialized recruiters combines cutting-edge technology with human insight to make meaningful connections.
+          Today, we've grown into a full-service recruitment partner serving 50+ companies across multiple industries.
+          Our team of 20+ specialized recruiters combines cutting-edge technology with human insight to make meaningful connections.
         </p>
 
         <h3 className="text-xl font-semibold text-gray-800 mb-2">Empowering Client Success</h3>
@@ -133,9 +133,9 @@ const OurStorySection = () => (
         </p>
 
         <div className="grid grid-cols-3 gap-4 text-center mt-8">
-          <StatCard number="500+" label="Companies Served" />
+          <StatCard number="50+" label="Companies Served" />
           <StatCard number="90%" label="Placement Success Rate" />
-          <StatCard number="15" label="Industry Specialists" />
+          <StatCard number="20%" label="Industry Specialists" />
         </div>
       </div>
     </div>

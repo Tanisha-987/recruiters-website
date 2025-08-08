@@ -11,6 +11,7 @@ import envision from "../assets/envision.png";
 import enser from "../assets/enser.jpeg";
 import saumic from "../assets/saumic.png";
 import teleperformance from "../assets/teleperformance.webp";
+import harbor from "../assets/harbor.png"
 
 
 const fadeUp = {
@@ -87,6 +88,12 @@ const companies = [
     feedback:
       "Outstanding communication, commitment, and quality delivery across every stage.",
   },
+  {
+    name: "Harbor Connect Service LLP",
+    logo: harbor,
+    feedback:
+      "Their dedication and timely communication made the process extremely smooth. We were impressed by their approach.",
+  }
 ];
 
 const Testimonials = () => {
