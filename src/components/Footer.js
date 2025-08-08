@@ -1,5 +1,5 @@
-import React from 'react';
 import { Users, Phone, Mail, MapPin, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
+
 
 const Footer = () => {
   const services = [
@@ -30,7 +30,7 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: '#', name: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/get-jobs-solution/posts/?feedView=all', name: 'LinkedIn' },
     { icon: Twitter, href: '#', name: 'Twitter' },
     { icon: Facebook, href: '#', name: 'Facebook' },
     { icon: Instagram, href: '#', name: 'Instagram' }
@@ -50,10 +50,10 @@ const Footer = () => {
                 </div>
                 <span className="text-2xl font-bold">Strive Business Solution</span>
               </div>
-              
+
               <p className="text-gray-300 leading-relaxed">
-                We're more than just a recruitment agency. We're your strategic partner in building 
-                exceptional teams that drive business success. With over a decade of experience, 
+                We're more than just a recruitment agency. We're your strategic partner in building
+                exceptional teams that drive business success. With over a decade of experience,
                 we've helped 500+ companies find their perfect matches.
               </p>
 
@@ -82,7 +82,7 @@ const Footer = () => {
             <FooterColumn title="Company" items={company} />
           </div>
         </div>
-        
+
         {/* Newsletter Signup */}
         <NewsletterSignup />
 
@@ -116,9 +116,7 @@ const FooterColumn = ({ title, items }) => (
     <ul className="space-y-3">
       {items.map((item, index) => (
         <li key={index}>
-          <a href="#"
-            className="text-gray-300 hover:text-sky-300 transition-colors duration-300"
-          >
+          <a href='#' className="text-gray-300 hover:text-sky-300 transition-colors duration-300" >
             {item}
           </a>
         </li>
@@ -155,18 +153,19 @@ const BottomBar = () => (
         © 2024 Strive Business Solution. All rights reserved.
       </div>
       <div className="flex space-x-6 text-sm">
-        <FooterLink text="Privacy Policy" />
-        <FooterLink text="Terms of Service" />
-        <FooterLink text="Cookie Policy" />
+        <FooterLink text="Privacy Policy" href="/privacy-policy" />
+        <FooterLink text="Terms of Service" href="/terms" />
+        <FooterLink text="Cookie Policy" href="/cookie-policy" />
       </div>
     </div>
   </div>
 );
 
-const FooterLink = ({ text }) => (
-  <a href="#" className="text-gray-200 hover:text-sky-300 transition-colors duration-300">
+const FooterLink = ({ text, href }) => (
+  <a href={href} className="text-gray-200 hover:text-sky-300 transition-colors duration-300">
     {text}
   </a>
 );
+
 
 export default Footer;
