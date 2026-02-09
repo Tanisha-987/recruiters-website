@@ -40,7 +40,6 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <ScrollLink
             to="home"
             smooth={true}
@@ -56,7 +55,6 @@ const Header = () => {
             
           </ScrollLink>
 
-          {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-4">
             {navigation.main.map((item, i) => (
               <ScrollLink
@@ -73,8 +71,6 @@ const Header = () => {
               </ScrollLink>
             ))}
           </nav>
-
-          {/* Desktop Contact Icons */}
           <div className="hidden md:flex items-center space-x-3">
             {navigation.contact.map((item, i) => (
               <div key={i} className="relative group">
@@ -87,8 +83,6 @@ const Header = () => {
               </div>
             ))}
           </div>
-
-          {/* Mobile Toggle Button */}
           <button
             onClick={toggleMenu}
             className="md:hidden p-2 rounded-md text-gray-500 hover:text-sky-600 hover:bg-gray-100 focus:outline-none"
@@ -97,8 +91,6 @@ const Header = () => {
           </button>
         </div>
       </div>
-
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div

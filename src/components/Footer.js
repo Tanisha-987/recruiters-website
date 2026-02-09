@@ -39,10 +39,8 @@ const Footer = () => {
   return (
     <footer className="bg-sky-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            {/* Company Info */}
             <div className="lg:col-span-2 space-y-6">
               <div className="flex items-center space-x-2">
                 <div className="bg-gradient-to-r from-sky-300 to-sky-800 p-2 rounded-lg">
@@ -57,14 +55,13 @@ const Footer = () => {
                 we've helped 500+ companies find their perfect matches.
               </p>
 
-              {/* Contact Info */}
+      
               <div className="space-y-3">
                 <ContactItem icon={Phone} text="+91 80768-21601" />
                 <ContactItem icon={Mail} text="Hr@strivebusinesssolution.com" />
                 <ContactItem icon={MapPin} text="Sector 37 C, Gurugram" />
               </div>
 
-              {/* Social Links */}
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <SocialLink key={index} icon={social.icon} href={social.href} name={social.name} />
@@ -72,21 +69,16 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Services */}
             <FooterColumn title="Services" items={services} />
 
-            {/* Industries */}
             <FooterColumn title="Industries" items={industries} />
 
-            {/* Company */}
             <FooterColumn title="Company" items={company} />
           </div>
         </div>
 
-        {/* Newsletter Signup */}
         <NewsletterSignup />
 
-        {/* Bottom Bar */}
         <BottomBar />
       </div>
     </footer>
@@ -116,7 +108,7 @@ const FooterColumn = ({ title, items }) => (
     <ul className="space-y-3">
       {items.map((item, index) => (
         <li key={index}>
-          <a href='#' className="text-gray-300 hover:text-sky-300 transition-colors duration-300" >
+          <a href='/' className="text-gray-300 hover:text-sky-300 transition-colors duration-300" >
             {item}
           </a>
         </li>
@@ -156,6 +148,29 @@ const BottomBar = () => (
         <FooterLink text="Privacy Policy" href="/privacy-policy" />
         <FooterLink text="Terms of Service" href="/terms" />
         <FooterLink text="Cookie Policy" href="/cookie-policy" />
+      </div>
+    </div>
+    <div className="flex flex-col md:flex-row items-right justify-between space-y-4 md:space-y-0">
+         <div className="mt-6 text-center animate-fadeInUp" style={{ animationDelay: '500ms' }}>
+            <p className="text-gray-400 text-sm">
+              Designed and Developed by{' '}
+              <a
+                href="https://www.linkedin.com/in/tanisha-garg-70116b313/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 hover:text-blue-200 font-semibold transition-all hover:underline decoration-2 underline-offset-4 inline-flex items-center space-x-1 group"
+              >
+                <span>Tanisha</span>
+                <svg
+                  className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+            </p>
       </div>
     </div>
   </div>

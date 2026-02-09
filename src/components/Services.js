@@ -62,7 +62,7 @@ const Services = () => {
     <section id="services" className="py-24 bg-white scroll-mt-20" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          key={isInView} // <-- key change triggers re-animation
+          key={isInView}
           className="text-center mb-16"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}

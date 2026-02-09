@@ -29,7 +29,6 @@ const AboutUs = () => {
           </p>
         </motion.div>
 
-        {/* Mission + Values */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <motion.div
             variants={fadeInUp}
@@ -74,7 +73,6 @@ const AboutUs = () => {
   );
 };
 
-// Mission Section
 const MissionSection = () => (
   <div className="bg-white p-6 rounded-lg shadow-lg">
     <div className="bg-gradient-to-r from-sky-300 to-sky-800 p-3 rounded-lg w-16 h-16 flex items-center justify-center mb-6">
@@ -92,7 +90,6 @@ const MissionSection = () => (
   </div>
 );
 
-// Values Section
 const ValuesSection = () => (
   <div className="bg-white p-6 rounded-lg shadow-lg">
     <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Values</h2>
@@ -105,7 +102,6 @@ const ValuesSection = () => (
   </div>
 );
 
-// Our Story Section
 const OurStorySection = () => (
   <div className="bg-white rounded-2xl p-12 shadow-xl mb-20">
     <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
@@ -142,7 +138,6 @@ const OurStorySection = () => (
   </div>
 );
 
-// Value Item
 const ValueItem = ({ icon: Icon, title, description }) => (
   <div className="flex items-start space-x-6">
     <div className="bg-sky-100 p-4 rounded-lg flex-shrink-0">
@@ -155,7 +150,6 @@ const ValueItem = ({ icon: Icon, title, description }) => (
   </div>
 );
 
-// Stat Card
 const StatCard = ({ number, label }) => (
   <div className="bg-gradient-to-br from-sky-50 to-white p-6 rounded-xl shadow-sm border border-sky-100">
     <div className="lg:text-4xl text-2xl font-bold text-sky-700 mb-2">{number}</div>

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Quote, Star } from "lucide-react";
-
 import tech from "../assets/tech.png";
 import treline from "../assets/treline.png";
 import transcom from "../assets/transcom.png";
@@ -12,8 +11,6 @@ import enser from "../assets/enser.jpeg";
 import saumic from "../assets/saumic.png";
 import teleperformance from "../assets/teleperformance.webp";
 import harbor from "../assets/harbor.png"
-
-
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (i = 1) => ({
@@ -100,7 +97,6 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
         <motion.div
           className="text-center mb-16"
           initial="hidden"
@@ -116,8 +112,6 @@ const Testimonials = () => {
             quality, integrity, and trust.
           </p>
         </motion.div>
-
-        {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {companies.map((company, index) => (
             <motion.div

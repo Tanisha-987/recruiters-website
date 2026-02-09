@@ -12,19 +12,13 @@ const Timeline = () => {
 
   return (
     <div className="mt-20 bg-white rounded-2xl p-10 shadow-xl relative overflow-hidden">
-      {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-sky-50 via-white to-sky-50 opacity-70"></div>
-
       <div className="relative z-10 max-w-5xl mx-auto">
         <h3 className="text-3xl font-bold text-center text-gray-900 mb-14 flex items-center justify-center gap-2">
           🚀 5-Days Streamlined Hiring Timeline
         </h3>
-
-        {/* Connecting Line */}
         <div className="hidden md:block absolute top-[92px] left-1/2 -translate-x-1/2 w-[85%] max-w-4xl h-[4px] 
         bg-gradient-to-r from-blue-300 via-green-300 via-yellow-300 via-orange-300 to-purple-300 rounded-full z-0"></div>
-
-        {/* Steps */}
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-10 md:gap-0 relative">
           {timelineSteps.map((item, index) => (
             <TimelineItem key={index} {...item} />

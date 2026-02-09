@@ -44,7 +44,7 @@ const Contact = () => {
       icon: Phone,
       title: 'Phone',
       details: ['+91 80768-21601'],
-      description: 'Mon-Fri 8:00 AM - 6:00 PM EST'
+      description: 'Mon-Sat 10:00 AM - 7:00 PM EST'
     },
     {
       icon: Mail,
@@ -61,7 +61,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: 'Hours',
-      details: ['Monday - Friday: 8:00 AM - 6:00 PM', 'Saturday: 9:00 AM - 2:00 PM'],
+      details: ['Monday - Saturday: 10:00 AM - 7:00 PM'],
       description: 'Emergency support available 24/7'
     }
   ];
@@ -83,7 +83,6 @@ const Contact = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Left - Form */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -167,8 +166,6 @@ const Contact = () => {
               </form>
             )}
           </motion.div>
-
-          {/* Right - Info Cards */}
           <motion.div
             initial="hidden"
             whileInView="visible"
