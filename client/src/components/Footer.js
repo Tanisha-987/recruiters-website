@@ -108,7 +108,7 @@ const FooterColumn = ({ title, items }) => (
     <ul className="space-y-3">
       {items.map((item, index) => (
         <li key={index}>
-          <a href='#' className="text-gray-300 hover:text-sky-300 transition-colors duration-300" >
+          <a href='/' className="text-gray-300 hover:text-sky-300 transition-colors duration-300" >
             {item}
           </a>
         </li>
