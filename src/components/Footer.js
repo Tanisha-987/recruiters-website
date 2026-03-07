@@ -57,9 +57,33 @@ const Footer = () => {
 
       
               <div className="space-y-3">
-                <ContactItem icon={Phone} text="+91 80768-21601" />
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-sky-100 flex-shrink-0" />
+                  <a href="tel:+918076821601" className="text-gray-300 hover:text-sky-300 transition-colors">+91 80768 21601</a>
+                </div>
                 <ContactItem icon={Mail} text="Hr@strivebusinesssolution.com" />
-                <ContactItem icon={MapPin} text="Sector 37 C, Gurugram" />
+                <div className="flex items-start space-x-3">
+                  <MapPin className="h-5 w-5 text-sky-100 flex-shrink-0 mt-1" />
+                  <address className="text-gray-300 not-italic leading-relaxed">
+                    Office no: 66, Ground floor, 1st Street,<br />
+                    Garauli Kalan, Sector 37C,<br />
+                    Gurugram, Haryana 122006
+                  </address>
+                </div>
+              </div>
+
+              {/* Google Maps - SEO Friendly & Visible */}
+              <div className="mt-4 rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.1044772707173!2d76.97709147549395!3d28.446266775767032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1712ba23c2b5%3A0xea2e7f70f6ec1661!2sStrive%20Business%20Solution!5e0!3m2!1sen!2sin!4v1772798484276!5m2!1sen!2sin"
+                  width="100%"
+                  height="220"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Strive Business Solution Location - Sector 37C Gurugram"
+                ></iframe>
               </div>
 
               <div className="flex space-x-4">

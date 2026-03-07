@@ -64,7 +64,7 @@ const SuccessRate = () => (
 const Header = () => (
   <div className="space-y-4">
     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-      Strive Business Solution –
+      Human resource consulting in Gurgaon
       <span className="bg-gradient-to-r from-sky-300 to-sky-800 bg-clip-text text-transparent block">
         Recruiting Talent. Empowering Growth.
       </span>
@@ -489,7 +489,7 @@ const FormsSection = ({ onSuccess }) => (
     className="mt-20"
   >
     <div className="text-center mb-12">
-      <h2 className="text-3xl font-bold text-gray-900 mb-4">Get Started</h2>
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">We are a Human resource consulting agency providing Recruitment Services, Job Consultancy, Staffing Solutions and Career Counseling</h2>
       <p className="text-lg text-gray-600 max-w-2xl mx-auto">
         Whether you're looking for the right job or the right candidate, we'll help you achieve your goal.
       </p>
