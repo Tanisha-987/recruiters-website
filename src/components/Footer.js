@@ -46,7 +46,7 @@ const Footer = () => {
                 <div className="bg-gradient-to-r from-sky-300 to-sky-800 p-2 rounded-lg">
                   <Users className="h-6 w-6 text-white" />
                 </div>
-                <span className="text-2xl font-bold">Strive Business Solution</span>
+                <span className="text-2xl font-bold">Strive Business Solution HR Consultants</span>
               </div>
 
               <p className="text-gray-300 leading-relaxed">
@@ -82,7 +82,7 @@ const Footer = () => {
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Strive Business Solution Location - Sector 37C Gurugram"
+                  title="Strive Business Solution HR Consultants Location - Sector 37C Gurugram"
                 ></iframe>
               </div>
 
@@ -166,7 +166,7 @@ const BottomBar = () => (
   <div className="border-t border-gray-800 py-6">
     <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
       <div className="text-gray-300 text-sm">
-        © 2024 Strive Business Solution. All rights reserved.
+        © 2024 Strive Business Solution HR Consultants. All rights reserved.
       </div>
       <div className="flex space-x-6 text-sm">
         <FooterLink text="Privacy Policy" href="/privacy-policy" />

@@ -49,7 +49,7 @@ const Header = () => {
           >
             <img
               src={logo}
-              alt="Strive Business Solutions Logo"
+              alt="Strive Business Solution HR Consultants HR Consultants Logo"
               className="h-[250px] md:w-[400px] w-auto -ml-12"
             />
             

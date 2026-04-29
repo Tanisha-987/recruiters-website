@@ -24,7 +24,7 @@ const AboutUs = () => {
             <span className="gradient-text">Driven by People.</span> Powered by Purpose.
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            At Strive Business Solutions, we believe the right people are the heart of every successful business.
+            At Strive Business Solution HR Consultants HR Consultants, we believe the right people are the heart of every successful business.
             As a trusted recruitment partner, we help companies build high-performing teams—and help individuals build meaningful careers.
           </p>
         </motion.div>
@@ -111,7 +111,7 @@ const OurStorySection = () => (
       </div>
       <div>
         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-          Founded in 2024, Strive Business Solutions began as a small team of recruitment specialists with a shared vision: to transform how companies find talent and how professionals find opportunities.
+          Founded in 2024, Strive Business Solution HR Consultants HR Consultants began as a small team of recruitment specialists with a shared vision: to transform how companies find talent and how professionals find opportunities.
         </p>
         <p className="text-lg text-gray-600 mb-6 leading-relaxed">
           Today, we've grown into a full-service recruitment partner serving 50+ companies across multiple industries.

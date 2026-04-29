@@ -69,7 +69,7 @@ const Services = () => {
           variants={fadeUp}
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Strive Business Solution – Recruiting Talent. Empowering Growth.
+            Strive Business Solution HR Consultants – Recruiting Talent. Empowering Growth.
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We help businesses grow by connecting them with the right people. Whether you're hiring or job-seeking, Strive delivers smart recruitment solutions with speed, precision, and care.
