@@ -28,7 +28,7 @@ const AboutUs = () => {
             As a trusted recruitment partner, we help companies build high-performing teams—and help individuals build meaningful careers.
           </p>
         </motion.div>
-
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <motion.div
             variants={fadeInUp}
