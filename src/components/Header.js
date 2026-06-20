@@ -13,7 +13,7 @@ const Header = () => {
     main: [
       { href: "home", label: "Home" },
       { href: "about", label: "About" },
-      { href: "services", label: "Services" },
+      { href: "/humanresourceconsulting/", label: "Services", external: true },
       { href: "testimonials", label: "Testimonials" },
       { href: "contact", label: "Contact" },
     ],
@@ -56,20 +56,30 @@ const Header = () => {
           </ScrollLink>
 
           <nav className="hidden md:flex space-x-4">
-            {navigation.main.map((item, i) => (
-              <ScrollLink
-                key={i}
-                to={item.href}
-                smooth={true}
-                duration={500}
-                offset={-64}
-                activeClass="text-sky-600 font-semibold"
-                spy={true}
-                className="cursor-pointer px-3 py-2 text-xl font-semibold text-gray-700 hover:text-sky-600 transition-colors"
-              >
-                {item.label}
-              </ScrollLink>
-            ))}
+            {navigation.main.map((item, i) =>
+              item.external ? (
+                <a
+                  key={i}
+                  href={item.href}
+                  className="cursor-pointer px-3 py-2 text-xl font-semibold text-gray-700 hover:text-sky-600 transition-colors"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <ScrollLink
+                  key={i}
+                  to={item.href}
+                  smooth={true}
+                  duration={500}
+                  offset={-64}
+                  activeClass="text-sky-600 font-semibold"
+                  spy={true}
+                  className="cursor-pointer px-3 py-2 text-xl font-semibold text-gray-700 hover:text-sky-600 transition-colors"
+                >
+                  {item.label}
+                </ScrollLink>
+              )
+            )}
           </nav>
           <div className="hidden md:flex items-center space-x-3">
             {navigation.contact.map((item, i) => (
@@ -101,19 +111,30 @@ const Header = () => {
             className="md:hidden overflow-hidden bg-white shadow-inner"
           >
             <div className="px-4 py-4 space-y-2">
-              {navigation.main.map((item, i) => (
-                <ScrollLink
-                  key={i}
-                  to={item.href}
-                  smooth={true}
-                  duration={500}
-                  offset={-64}
-                  onClick={toggleMenu}
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 cursor-pointer rounded"
-                >
-                  {item.label}
-                </ScrollLink>
-              ))}
+              {navigation.main.map((item, i) =>
+                item.external ? (
+                  <a
+                    key={i}
+                    href={item.href}
+                    onClick={toggleMenu}
+                    className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 cursor-pointer rounded"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <ScrollLink
+                    key={i}
+                    to={item.href}
+                    smooth={true}
+                    duration={500}
+                    offset={-64}
+                    onClick={toggleMenu}
+                    className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 cursor-pointer rounded"
+                  >
+                    {item.label}
+                  </ScrollLink>
+                )
+              )}
             </div>
             <div className="px-4 py-3 border-t border-gray-200">
               <h3 className="text-xs font-semibold text-gray-500 uppercase mb-2">Contact us</h3>
@@ -138,4 +159,3 @@ const Header = () => {
 };
 
 export default Header;
-
