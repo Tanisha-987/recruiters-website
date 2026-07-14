@@ -1,21 +1,24 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/logo.png"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navigation = {
     main: [
-      { href: "home", label: "Home" },
-      { href: "about", label: "About" },
+      { href: "home", label: "Home", section: true },
+      { href: "about", label: "About", section: true },
       { href: "/humanresourceconsulting/", label: "Services", external: true },
-      { href: "testimonials", label: "Testimonials" },
-      { href: "contact", label: "Contact" },
+      { href: "/areas-we-serve/", label: "Areas We Serve", route: true },
+      { href: "testimonials", label: "Testimonials", section: true },
+      { href: "contact", label: "Contact", section: true },
     ],
     contact: [
       { icon: Phone, text: "+91 80768-21601", link: "tel:+918076821601" },
@@ -40,11 +43,8 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center h-16">
-          <ScrollLink
-            to="home"
-            smooth={true}
-            duration={500}
-            offset={-64}
+          <Link
+            to="/"
             className="flex items-center cursor-pointer"
           >
             <img
@@ -53,7 +53,7 @@ const Header = () => {
               className="h-[250px] md:w-[400px] w-auto -ml-12"
             />
             
-          </ScrollLink>
+          </Link>
 
           <nav className="hidden md:flex space-x-4">
             {navigation.main.map((item, i) =>
@@ -65,7 +65,15 @@ const Header = () => {
                 >
                   {item.label}
                 </a>
-              ) : (
+              ) : item.route ? (
+                <Link
+                  key={i}
+                  to={item.href}
+                  className="cursor-pointer px-3 py-2 text-xl font-semibold text-gray-700 hover:text-sky-600 transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ) : location.pathname === "/" ? (
                 <ScrollLink
                   key={i}
                   to={item.href}
@@ -78,6 +86,14 @@ const Header = () => {
                 >
                   {item.label}
                 </ScrollLink>
+              ) : (
+                <a
+                  key={i}
+                  href={`/#${item.href}`}
+                  className="cursor-pointer px-3 py-2 text-xl font-semibold text-gray-700 hover:text-sky-600 transition-colors"
+                >
+                  {item.label}
+                </a>
               )
             )}
           </nav>
@@ -121,7 +137,16 @@ const Header = () => {
                   >
                     {item.label}
                   </a>
-                ) : (
+                ) : item.route ? (
+                  <Link
+                    key={i}
+                    to={item.href}
+                    onClick={toggleMenu}
+                    className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 cursor-pointer rounded"
+                  >
+                    {item.label}
+                  </Link>
+                ) : location.pathname === "/" ? (
                   <ScrollLink
                     key={i}
                     to={item.href}
@@ -133,6 +158,15 @@ const Header = () => {
                   >
                     {item.label}
                   </ScrollLink>
+                ) : (
+                  <a
+                    key={i}
+                    href={`/#${item.href}`}
+                    onClick={toggleMenu}
+                    className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 cursor-pointer rounded"
+                  >
+                    {item.label}
+                  </a>
                 )
               )}
             </div>
