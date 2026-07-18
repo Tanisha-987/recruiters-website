@@ -64,7 +64,7 @@ const SuccessRate = () => (
 const Header = () => (
   <div className="space-y-4">
     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-      Human resource consulting in Gurgaon
+      HR Consultants in Gurgaon
       <span className="bg-gradient-to-r from-sky-300 to-sky-800 bg-clip-text text-transparent block">
         Recruiting Talent. Empowering Growth.
       </span>
